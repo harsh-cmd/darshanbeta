@@ -59,17 +59,6 @@ public class ProductFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_product, container, false);
         view = v.findViewById(R.id.expandableListView);
         textView = v.findViewById(R.id.textView);
-        for (String element : element) {
-            ProductAsyncTask asyncTask = new ProductAsyncTask();
-            asyncTask.execute("https://api.barcodelookup.com/v2/products?barcode=" +Long.parseLong(element)+"&formatted=y&key=" + BARCODE_API_KEY);
-            try {
-                String response = asyncTask.get();
-                textView.setText(response);
-                getAllProductDetail(response);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
         prepareListData();
         view.setAdapter(new ExpandableListAdapter(requireContext(),listDataHeader,listDataChild));
         return v;
