@@ -1,0 +1,160 @@
+/* */
+
+       /* username.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                  @Override
+                  public void onFocusChange(View v, boolean hasFocus) {
+                      if (hasFocus) {
+
+                      } else {
+
+                      }
+
+                  }
+              });
+
+
+              email.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                  @Override
+                  public void onFocusChange(View v, boolean hasFocus) {
+
+                      if (hasFocus && (username.getText().toString().isEmpty() || password.getText().toString().isEmpty() || phone.getText().toString().isEmpty()))  {
+                          username.getBackground().setColorFilter(getResources().getColor(R.color.colorRed),PorterDuff.Mode.SRC_ATOP);
+                          password.getBackground().setColorFilter(getResources().getColor(R.color.colorRed),PorterDuff.Mode.SRC_ATOP);
+                          phone.getBackground().setColorFilter(getResources().getColor(R.color.colorRed),PorterDuff.Mode.SRC_ATOP);
+                      } else {
+                          username.getBackground().setColorFilter(getResources().getColor(R.color.colorBlue),PorterDuff.Mode.SRC_ATOP);
+                          password.getBackground().setColorFilter(getResources().getColor(R.color.colorBlue),PorterDuff.Mode.SRC_ATOP);
+                          phone.getBackground().setColorFilter(getResources().getColor(R.color.colorBlue),PorterDuff.Mode.SRC_ATOP);
+                      }
+                  }
+              });
+
+
+              phone.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                  @Override
+                  public void onFocusChange(View v, boolean hasFocus) {
+                      if (hasFocus && (username.getText().toString().isEmpty() || password.getText().toString().isEmpty() || email.getText().toString().isEmpty()))  {
+                          username.getBackground().setColorFilter(getResources().getColor(R.color.colorRed),PorterDuff.Mode.SRC_ATOP);
+                          password.getBackground().setColorFilter(getResources().getColor(R.color.colorRed),PorterDuff.Mode.SRC_ATOP);
+                          email.getBackground().setColorFilter(getResources().getColor(R.color.colorRed),PorterDuff.Mode.SRC_ATOP);
+                      } else {
+                          username.getBackground().setColorFilter(getResources().getColor(R.color.colorBlue),PorterDuff.Mode.SRC_ATOP);
+                          password.getBackground().setColorFilter(getResources().getColor(R.color.colorBlue),PorterDuff.Mode.SRC_ATOP);
+                          email.getBackground().setColorFilter(getResources().getColor(R.color.colorBlue),PorterDuff.Mode.SRC_ATOP);
+                      }
+                  }
+              });
+
+
+
+
+
+              buttonRegister.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View v) {
+
+                      FirebaseFirestore db = FirebaseFirestore.getInstance();
+                      Map<String, Object> user = new HashMap<String, Object>();
+                      user.put("username", "darshan");
+                      user.put("password", "darshan");
+                      db.collection("users")
+                              .add(user)
+                              .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                  @Override
+                                  public void onSuccess(DocumentReference documentReference) {
+                                      Toast.makeText(MainActivity.this, "success firebase", Toast.LENGTH_SHORT).show();
+                                  }
+                              })
+                              .addOnFailureListener(new OnFailureListener() {
+                                  @Override
+                                  public void onFailure(@NonNull Exception e) {
+                                      Toast.makeText(MainActivity.this, "fail firebase", Toast.LENGTH_SHORT).show();
+                                  }
+                              });
+                  }
+              });
+      */
+       /* password.addTextChangedListener(new TextWatcher() {
+                  @Override
+                  public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+                  }
+
+                  @Override
+                  public void onTextChanged(CharSequence s, int start, int before, int count) {
+                     Log.i("passwrod char",s.toString());
+
+                      if ((validatePassword(s.toString()))) {
+                          Log.i("passwordValidate", "true");
+                      } else {
+                          Log.i("passwordValidate", "false");
+                      }
+                  }
+
+                  @Override
+                  public void afterTextChanged(Editable s) {
+                  }
+              });
+
+
+
+
+
+              textViewLogin.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View v) {
+                      startActivity(new Intent(v.getContext(), LoginActivity.class));
+                  }
+              });
+
+              buttonRegister.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View v) {
+
+                      startActivity(new Intent(v.getContext(), indexInfo.class));
+                  }
+              });
+
+              if (ContextCompat.checkSelfPermission(this, CAMERA) == PackageManager.PERMISSION_DENIED) {
+                  ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA);
+
+              }*/
+
+
+               /* public void onTextChange(EditText username)
+                  {
+                      user = username.getText().toString();
+                      Log.i("username: ", "darshan");
+                  }
+
+                  boolean validatePassword(String passwordString) {
+                      Pattern pattern = Pattern.compile(passwordPattern);
+                      Matcher matcher = pattern.matcher(passwordString);
+                      return matcher.matches();
+                  }*/
+
+          /* @Override
+            protected void onResume() {
+                super.onResume();
+                if(!username.getText().toString().equals(null))
+                {
+                    if(email.isFocusable() || password.isFocusable() || phone.isFocusable())
+                    {
+                        Log.i("focuse ","true");
+                        username.getBackground().setColorFilter(getResources().getColor(R.color.colorRed),PorterDuff.Mode.SRC_ATOP);
+                    }
+                }
+            }*/
+
+            //    @Override
+            //    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+            //        switch (requestCode) {
+            //            case REQUEST_CAMERA:
+            //                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            //
+            //                } else {
+            //                    Toast.makeText(this, "Permission Denied", Toast.LENGTH_SHORT).show();
+            //                }
+            //                break;
+            //        }
+            //    }

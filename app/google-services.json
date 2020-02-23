@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1036497106955",
+    "firebase_url": "https://darshanbeta-a6216.firebaseio.com",
+    "project_id": "darshanbeta-a6216",
+    "storage_bucket": "darshanbeta-a6216.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036497106955:android:972bf2ddd3d2d1f1c7ef0e",
+        "android_client_info": {
+          "package_name": "com.example.darshanbeta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1036497106955-eglkmi83ss2ksugjv304hiknp9ciskvs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.darshanbeta",
+            "certificate_hash": "0748dfa10aed0c1b74d6fbab1685b03ce8033a5b"
+          }
+        },
+        {
+          "client_id": "1036497106955-63pr5377f2epkspuamjglh0hl2jtjm67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT8ZB7p65RdXC0i3fdkAcTZg_srLY2C0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1036497106955-63pr5377f2epkspuamjglh0hl2jtjm67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
