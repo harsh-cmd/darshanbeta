@@ -32,7 +32,7 @@ public class DisplayResult extends AppCompatActivity {
     private int currentItemIndex;
     private TextView textView;
     private BottomNavigationView bottomNavigationView;
-    private static final String BARCODE_API_KEY = "mpd4hagf6pkuzp9c6lz0ehorywe6ta";
+    private static final String BARCODE_API_KEY = "xxy22gvw2ujql4s311gs54zypsh9vu";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
